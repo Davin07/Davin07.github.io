@@ -1,6 +1,6 @@
 # Davin S Thomas - Software Engineer Portfolio
 
-A "Deep Void" themed developer portfolio built with React, TypeScript, and Framer Motion. Designed to resemble an Integrated Development Environment (IDE) with a focus on backend architecture visualization.
+A "Deep Void" themed developer portfolio built with React, TypeScript, and Framer Motion. Features a dark aesthetic with cyan and purple accents, designed to showcase technical expertise through interactive elements and animations.
 
 ## Tech Stack
 
@@ -8,15 +8,25 @@ A "Deep Void" themed developer portfolio built with React, TypeScript, and Frame
 *   **Styling:** Tailwind CSS
 *   **Animations:** Framer Motion
 *   **Icons:** Lucide React
-*   **Visualization:** HTML5 Canvas (Particle Mesh)
+*   **Visualization:** HTML5 Canvas (Particle Background)
 
 ## Features
 
-*   **Live Code Editor Hero:** Interactive 3D-tilted code window.
-*   **Neural Data Mesh:** Custom particle background with moving data packets.
-*   **Architecture Schematics:** Animated diagrams showing system flows (e.g., Server -> DB).
-*   **System Resource Skills:** Skills visualized as CPU/Memory usage bars.
-*   **Terminal Contact:** Interactive CLI-style contact form with `mailto` integration.
+*   **Live Code Editor Hero:** Interactive code window displaying Java-style class definition with 3D perspective and floating elements
+*   **Particle Background:** Custom canvas-based particle system with subtle animations
+*   **Timeline Experience:** Interactive timeline showcasing professional journey with hover effects and animations
+*   **Skills Display:** Categorized technical skills in card format with hover states
+*   **Architecture Schematics:** Animated diagrams in projects showing system data flows with pulsing animations
+*   **Terminal Contact:** Interactive CLI-style contact form with step-by-step prompts and mailto integration
+*   **Responsive Design:** Fully responsive layout with mobile hamburger menu and smooth navigation
+*   **Custom Branding:** Personalized favicon with DT initials and gradient styling
+
+## Design System
+
+*   **Color Palette:** Deep background (#020617), cyan primary (#38bdf8), purple secondary (#818cf8)
+*   **Typography:** Inter for body text, JetBrains Mono for code/technical elements
+*   **Consistent Section Styling:** All sections use grid pattern backgrounds with centered headers and font-mono subtitles
+*   **Animations:** Subtle hover effects, scroll-triggered animations, and smooth transitions
 
 ## Running Locally
 
@@ -33,4 +43,9 @@ A "Deep Void" themed developer portfolio built with React, TypeScript, and Frame
 3.  Build for production:
     ```bash
     npm run build
+    ```
+
+4.  Preview production build:
+    ```bash
+    npm run preview
     ```
