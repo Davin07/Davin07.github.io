@@ -22,10 +22,13 @@ function App() {
         <Projects />
         <TerminalContact />
         
-        <footer className="py-8 text-center text-slate-500 text-sm border-t border-border bg-background/80 backdrop-blur-md">
-          <p className="font-mono">
+        <footer className="py-8 text-center text-slate-500 text-xs sm:text-sm border-t border-border bg-background/80 backdrop-blur-md">
+          <p className="font-mono mb-2">
             <span className="text-primary">System.out.println</span>("© {new Date().getFullYear()} Davin S Thomas");
           </p>
+          <div className="flex items-center justify-center gap-2 text-slate-500">
+            <span className="font-mono text-xs uppercase tracking-wider">// Generated with coffee and AI</span>
+          </div>
         </footer>
       </div>
     </main>
