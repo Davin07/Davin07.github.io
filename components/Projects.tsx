@@ -73,21 +73,15 @@ const ArchitectureSchematic: React.FC<{ arch: Project['architecture'] }> = ({ ar
 
 const Projects: React.FC = () => {
   return (
-    <section id="projects" className="py-24 bg-surface/30 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mb-16 flex flex-col md:flex-row justify-between items-end gap-4">
-            <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                    <span className="text-primary">Projects</span>
-                </h2>
-                <p className="text-slate-400 max-w-xl">
-                    A showcase of personal projects and architectural experiments.
-                </p>
-            </div>
-            <div className="flex items-center gap-2 text-primary font-mono text-sm border border-primary/20 px-3 py-1 rounded bg-primary/5">
-                <span className="w-2 h-2 bg-primary rounded-full animate-pulse"></span>
-                ACTIVE_DEV
-            </div>
+    <section id="projects" className="py-24 bg-background relative">
+      <div className="absolute inset-0 bg-grid-pattern opacity-10 pointer-events-none"></div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+                <span className="text-primary">Projects</span>
+            </h2>
+            <p className="text-slate-400 font-mono text-sm tracking-widest">Architecting scalable solutions.</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">

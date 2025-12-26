@@ -25,16 +25,15 @@ const SkillCategory: React.FC<{ title: string; icon: React.ElementType; skills: 
 
 const Skills: React.FC = () => {
   return (
-    <section id="skills" className="py-24 bg-background relative overflow-hidden">
-        {/* Background Decorative */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] border border-slate-800/30 rounded-full z-0 pointer-events-none"></div>
+    <section id="skills" className="py-24 bg-background relative">
+      <div className="absolute inset-0 bg-grid-pattern opacity-10 pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Technical <span className="text-primary">Skills</span>
           </h2>
-          <p className="text-slate-400">Tools and technologies in my arsenal.</p>
+          <p className="text-slate-400 font-mono text-sm tracking-widest">Tools and technologies in my arsenal.</p>
         </div>
 
         <div className="space-y-16">
