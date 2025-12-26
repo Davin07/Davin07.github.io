@@ -88,35 +88,45 @@ const Navbar: React.FC = () => {
       {/* Mobile Nav */}
       <AnimatePresence>
         {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-surface border-b border-border"
-          >
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 font-mono">
-              {navLinks.map((link) => (
+          <>
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="absolute top-full left-0 w-full bg-surface border-b border-border shadow-2xl md:hidden z-50"
+            >
+                 <div className="px-4 pt-4 pb-6 space-y-2 font-mono">
+                {navLinks.map((link) => (
+                    <a
+                    key={link.name}
+                    href={link.href}
+                    onClick={(e) => {
+                        e.preventDefault();
+                        setIsOpen(false);
+                        const targetId = link.href.replace('#', '');
+                        const targetElement = document.getElementById(targetId);
+                        if (targetElement) {
+                            targetElement.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }}
+                    className="block px-4 py-3 text-base font-medium text-slate-400 hover:text-primary hover:bg-white/5 rounded-lg transition-colors cursor-pointer"
+                    >
+                    {link.name}
+                    </a>
+                ))}
                 <a
-                  key={link.name}
-                  href={link.href}
-                  onClick={() => setIsOpen(false)}
-                  className="block px-3 py-2 text-base font-medium text-slate-400 hover:text-primary hover:bg-white/5 rounded-md"
-                >
-                  {link.name}
-                </a>
-              ))}
-              <a
-                  href="/DavinSThomas-SWE.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => setIsOpen(false)}
-                  className="flex items-center gap-2 px-3 py-2 text-base font-medium text-slate-400 hover:text-primary hover:bg-white/5 rounded-md mt-2 border-t border-white/5 pt-4"
-                >
-                  <FileText className="w-4 h-4" />
-                  <span>Resume.pdf</span>
-                </a>
-            </div>
-          </motion.div>
+                    href="/DavinSThomas-SWE.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setIsOpen(false)}
+                    className="flex items-center gap-2 px-4 py-3 text-base font-medium text-slate-400 hover:text-primary hover:bg-white/5 rounded-lg mt-2 border-t border-white/5 pt-4"
+                    >
+                    <FileText className="w-4 h-4" />
+                    <span>Resume.pdf</span>
+                    </a>
+                </div>
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
     </nav>
