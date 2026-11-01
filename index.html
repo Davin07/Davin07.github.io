@@ -1,66 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth scroll-pt-20">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Davin S Thomas - Software Engineer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Davin S Thomas, software engineer</title>
+    <meta name="description" content="Backend software engineer at Mercedes-Benz R&D. A 15-minute API now answers in 18 seconds." />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-              mono: ['JetBrains Mono', 'monospace'],
-            },
-            colors: {
-              background: '#020617', // Slate 950 (Deep Void)
-              surface: '#0f172a',    // Slate 900
-              primary: '#38bdf8',    // Sky 400 (Electric Blue)
-              secondary: '#818cf8',  // Indigo 400
-              accent: '#f472b6',     // Pink 400
-              border: '#1e293b',     // Slate 800
-            },
-            backgroundImage: {
-              'grid-pattern': "linear-gradient(to right, #1e293b 1px, transparent 1px), linear-gradient(to bottom, #1e293b 1px, transparent 1px)",
-            },
-            animation: {
-              'pulse-fast': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-              'glow': 'glow 2s ease-in-out infinite alternate',
-            },
-            keyframes: {
-              glow: {
-                '0%': { boxShadow: '0 0 5px #38bdf8' },
-                '100%': { boxShadow: '0 0 20px #38bdf8, 0 0 10px #818cf8' },
-              }
-            }
-          }
-        }
-      }
-    </script>
-    <style>
-      .no-scrollbar::-webkit-scrollbar { display: none; }
-      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-      
-      /* Glowing Scrollbar for Desktop */
-      ::-webkit-scrollbar {
-        width: 8px;
-        background: #020617;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #1e293b;
-        border-radius: 4px;
-        border: 1px solid #38bdf8;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #38bdf8;
-      }
-    </style>
-  <script type="importmap">
+    <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600&family=IBM+Plex+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script type="importmap">
 {
   "imports": {
     "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
@@ -74,7 +23,7 @@
 </script>
 <link rel="stylesheet" href="/index.css">
 </head>
-  <body class="bg-background text-slate-200 antialiased overflow-x-hidden selection:bg-primary/30 selection:text-white">
+  <body>
     <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
 </body>
